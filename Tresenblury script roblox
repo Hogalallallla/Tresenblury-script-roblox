@@ -6,10 +6,18 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+local Tab2 = Window:MakeTab({
+	Name = "Humanoid",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 local Tab = Window:MakeTab({
 	Name = "Scripts",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+local Section = Tab2:AddSection({
+	Name = "Humanoid section"
 })
 local Section = Tab:AddSection({
 	Name = "script section"
@@ -47,6 +55,7 @@ Tab:AddButton({
 Tab:AddButton({
 	Name = "Break in 2 script",
 	Callback = function()
+      		p
       loadstring(game:HttpGet("https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"))()
   	end    
 })
@@ -55,5 +64,29 @@ Tab:AddButton({
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
   	end    
+})
+Tab2:AddSlider({
+	Name = "WalkSpeed",
+	Min = 16,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WS",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+Tab2:AddSlider({
+	Name = "Jump height",
+	Min = 16,
+	Max = 500,
+	Default = 16,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Height",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
 })
 OrionLib:Init()
