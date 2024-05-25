@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Tresenblury🍀(LEGIT😎💧🌌🔮)", HidePremium = false, IntroText = "Loading script...", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Tresenblury🍀(LEGIT😎)", HidePremium = false, IntroText = "Loading script...", SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
 	Name = "Welcome",
 	Content = "Welcome to my script - MATTSUN9746 :D",
