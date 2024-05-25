@@ -20,4 +20,41 @@ Tab:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/JulHubz/JulHub/main/JulHub"))()
   	end    
 })
+Tab:AddButton({
+	Name = "Brookhaven R4D",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Ghost hub",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Harlen hub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/harlenscripts/HarlenHub/main/HarlenScripts"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "pet simulator 99 script",
+	Callback = function()
+      		loadstring(game:HttpGet("https://scriptblox.com/raw/BACKROOMS-Pet-Simulator-99!-ZapHub-The-Best-PS99-Script-12975"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Break in 2 script",
+	Callback = function()
+      		p
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/RScriptz/RobloxScripts/main/BreakIn2.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Multi-Scripter-X",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
+  	end    
+})
 OrionLib:Init()
