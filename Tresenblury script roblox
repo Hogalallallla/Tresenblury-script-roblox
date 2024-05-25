@@ -7,7 +7,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 local Tab2 = Window:MakeTab({
-	Name = "Humanoid",
+	Name = "Gamepasses",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -17,7 +17,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 local Section = Tab2:AddSection({
-	Name = "Humanoid section"
+	Name = "Gamepass section"
 })
 local Section = Tab:AddSection({
 	Name = "script section"
@@ -64,28 +64,16 @@ Tab:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerScripter/Multi-Scripter-X/main/loader"))()
   	end    
 })
-Tab2:AddSlider({
-	Name = "WalkSpeed",
-	Min = 16,
-	Max = 500,
-	Default = 16,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "WS",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end    
+Tab2:AddButton({
+	Name = "Free gamepass V1",
+	Callback = function()
+      		for _,v in pairs(game:GetDescendants()) do if v.ClassName == "RemoteEvent" then if v.Parent.Name == "WeaponsRemotes" or v.Parent.Name == "VipRemotes" or v.Parent.Name == "Remotes" then v:FireServer() end end end
+  	end    
 })
-Tab2:AddSlider({
-	Name = "Jump height",
-	Min = 16,
-	Max = 500,
-	Default = 16,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Height",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
-	end    
+Tab2:AddButton({
+	Name = "Free Gamepass V2",
+	Callback = function()
+      		loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/6982de484735e730494b2d5a10fd6a2a/raw/a92563b0cd6a63683341a09f54baccea5349ed69/feGamepassV2",true))()
+  	end    
 })
 OrionLib:Init()
