@@ -36,6 +36,11 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+local Tab6 = Window:MakeTab({
+	Name = "Premium only",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = True
+})
 
 --Section--
 
@@ -53,6 +58,9 @@ local Section = Tab4:AddSection({
 })
 local Section = Tab5:AddSection({
 	Name = "Admin section"
+})
+local Section = Tab6:AddSection({
+	Name = "Premium section"
 })
 
 --Buttons--
@@ -157,6 +165,12 @@ Tab5:AddButton({
 	Name = "Reviz admin",
 	Callback = function()
       		loadstring(game:HttpGetAsync("https://pastebin.com/raw/Caniwq2N"))()
+  	end    
+})
+Tab6:AddButton({
+	Name = "HD admin (PATCHED SORRY)",
+	Callback = function()
+      		print("Patched")
   	end    
 })
 
