@@ -1,11 +1,16 @@
+--About--
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Tresenblury", HidePremium = false, IntroText = "Loading script...", SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Tresenblury🍀(LEGIT😎)", HidePremium = false, IntroText = "Loading script...", SaveConfig = true, ConfigFolder = "OrionTest"})
 OrionLib:MakeNotification({
 	Name = "Welcome",
 	Content = "Welcome to my script - MATTSUN9746 :D",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+
+--Tabs--
+
 local Tab5 = Window:MakeTab({
 	Name = "Admin cmds",
 	Icon = "rbxassetid://4483345998",
@@ -31,6 +36,9 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+--Section--
+
 local Section = Tab2:AddSection({
 	Name = "Gamepass section"
 })
@@ -46,6 +54,9 @@ local Section = Tab4:AddSection({
 local Section = Tab5:AddSection({
 	Name = "Admin section"
 })
+
+--Buttons--
+
 Tab:AddButton({
 	Name = "JulHub",
 	Callback = function()
@@ -136,4 +147,19 @@ Tab5:AddButton({
       		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end    
 })
+Tab5:AddButton({
+	Name = "Fates admin",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+  	end    
+})
+Tab5:AddButton({
+	Name = "Reviz admin",
+	Callback = function()
+      		loadstring(game:HttpGetAsync("https://pastebin.com/raw/Caniwq2N"))()
+  	end    
+})
+
+--Main--
+
 OrionLib:Init()
