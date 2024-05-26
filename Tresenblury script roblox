@@ -6,6 +6,11 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+local Tab5 = Window:MakeTab({
+	Name = "Admin cmds",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 local Tab4 = Window:MakeTab({
 	Name = "Tools",
 	Icon = "rbxassetid://4483345998",
@@ -31,6 +36,15 @@ local Section = Tab2:AddSection({
 })
 local Section = Tab:AddSection({
 	Name = "script section"
+})
+local Section = Tab3:AddSection({
+	Name = "Control panel section"
+})
+local Section = Tab4:AddSection({
+	Name = "Tools section"
+})
+local Section = Tab5:AddSection({
+	Name = "Admin section"
 })
 Tab:AddButton({
 	Name = "JulHub",
@@ -96,6 +110,30 @@ Tab4:AddButton({
 	Name = "Fe tool giver",
 	Callback = function()
       		loadstring(game:HttpGet("https://pastebin.com/raw/AZVi2tuK"))()
+  	end    
+})
+Tab5:AddButton({
+	Name = "Proton Admin (SPECIAL)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5e6e6cc1bb32fd926764d064e2c60a3b.lua"))()
+  	end    
+})
+Tab5:AddButton({
+	Name = "Nameless admin No byfron",
+	Callback = function()
+      		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Nameless-Admin-no-byfron-ui-11288"))()
+  	end    
+})
+Tab5:AddButton({
+	Name = "Tiger admin (WORKS ONLY IN PRISON LIFE)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Roblox/main/TigerAdmin.lua"))()
+  	end    
+})
+Tab5:AddButton({
+	Name = "Infinite yield",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end    
 })
 OrionLib:Init()
