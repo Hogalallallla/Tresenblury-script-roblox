@@ -202,21 +202,9 @@ Tab7:AddButton({
   	end    
 })
 Tab8:AddButton({
-	Name = "high Speed",
+	Name = "high Speed and jumpPower",
 	Callback = function()
-      		player.character.Humanoid.WalkSpeed = 200
-  	end    
-})
-Tab8:AddButton({
-	Name = "high Jumpower",
-	Callback = function()
-      		player.character.Humanoid.JumpPower = 200
-  	end    
-})
-Tab8:AddButton({
-	Name = "low Gravity",
-	Callback = function()
-      		game.workspace.gravity = 10
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Shugare/Speed/main/S", true))()
   	end    
 })
 Tab8:AddButton({
@@ -228,6 +216,12 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 	end
 end)
+  	end    
+})
+Tab8:AddButton({
+	Name = "Low gravity",
+	Callback = function()
+      		Callback = function() game.Workspace.Gravity = 10
   	end    
 })
 
