@@ -226,14 +226,6 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 end)
   	end    
 })
-Tab9:AddTextbox({
-	Name = "Bug report",
-	Default = "send bug report at email = sandhya.jnp2012@gmail.com",
-	TextDisappear = true,
-	Callback = function(Value)
-		print(email at = sandhya.jnp2012@gmail.com)
-	end	  
-})
 
 --Main--
 
