@@ -11,6 +11,11 @@ OrionLib:MakeNotification({
 
 --Tabs--
 
+local Tab9 = Window:MakeTab({
+	Name = "Feedback and credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 local Tab8 = Window:MakeTab({
 	Name = "Humanoid",
 	Icon = "rbxassetid://4483345998",
@@ -54,6 +59,12 @@ local Tab6 = Window:MakeTab({
 
 --Section--
 
+local Section2 = Tab9:AddSection({
+	Name = "If youre having any problem in my script or if you find any bug pls report at email = sandhya.jnp2012@gmail.com"
+})
+local Section = Tab9:AddSection({
+	Name = "Made By Roblox user named=MATTSUN9746 thanks for using my script :D"
+})
 local Section = Tab8:AddSection({
 	Name = "Humanoid section"
 })
@@ -217,6 +228,14 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 	end
 end)
   	end    
+})
+Tab9:AddTextbox({
+	Name = "Bug report",
+	Default = "send bug report at email = sandhya.jnp2012@gmail.com",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(email at = sandhya.jnp2012@gmail.com)
+	end	  
 })
 
 --Main--
