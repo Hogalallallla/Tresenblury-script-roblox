@@ -59,11 +59,8 @@ local Tab6 = Window:MakeTab({
 
 --Section--
 
-local Section2 = Tab9:AddSection({
-	Name = "If youre having any problem in my script or if you find any bug pls report at email = sandhya.jnp2012@gmail.com"
-})
 local Section = Tab9:AddSection({
-	Name = "Made By Roblox user named=MATTSUN9746 thanks for using my script :D"
+	Name = "Made By Roblox user named=MATTSUN9746 thanks for using my script :D and if you are felling any problem pls report at email = sandhya.jnp2012@gmail.com"
 })
 local Section = Tab8:AddSection({
 	Name = "Humanoid section"
