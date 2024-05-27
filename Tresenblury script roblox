@@ -218,12 +218,6 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 end)
   	end    
 })
-Tab8:AddButton({
-	Name = "Low gravity",
-	Callback = function()
-      		Callback = function() game.Workspace.Gravity = 10
-  	end    
-})
 
 --Main--
 
